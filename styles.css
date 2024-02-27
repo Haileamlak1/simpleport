@@ -1,0 +1,449 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+/* list-style: none; */
+font-family: sans-serif;
+text-decoration: none;
+border: none;
+outline: none;
+}
+/* defining css variables--------------------------------- */
+:root{
+--color-black: #000000;
+--color-white: #ffffff;
+--color-dark: #353535;
+--color-dark-variant: #555555;
+
+--transition: .4s ease;
+}
+/* predefining some common properties------------------------- */
+h1, h2, h3, h4, h5, h6{
+line-height: 120%;
+}
+h1{
+font-size: 48px;
+color: var(--color-black);
+}
+h2{
+font-size: 28px;
+color: var(--color-dark-variant);
+}
+h3{
+font-size: 26px;
+color: var(--color-black);
+}
+h4{
+font-size: 19px;
+color: var(--color-black);
+}
+h5{
+font-size: 18px;
+font-weight: 400;
+}
+.heading{
+text-align: center;
+margin-bottom: 2rem;
+}
+  /* navbar----------------------------------------------------------- */
+.nav-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+/* margin-top: 30px; */
+background: red;
+height: 50px;
+}
+.nav-links{
+display: flex;
+list-style: none;
+margin: 0;
+}
+.nav-links li{
+margin-right: 30px;
+
+}
+.nav-links a{
+text-decoration: none;
+color: #333;
+transition: color 0.3s ease;
+font-weight: bold;
+}
+.nav-links a:hover{
+color: blue;
+}
+.mylogo{
+text-decoration: none;
+color: var(--color-black);
+margin-left: 30px;
+font-style: italic;
+color: var(--color-dark-variant);
+font-size: 40px;
+}
+.fixed-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Introduction section---------------------------------------------- */
+.intro-section{
+margin-top: 170px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.f-image{
+margin-right: 50px;
+max-width: 400px;
+height: 300px;
+border: 1px solid none;
+border-radius: 60%;
+}
+.sub-intro-text{
+margin-top:25px;
+display: flex;
+justify-content: space-between;
+}
+.cont-info{
+background: var(--color-black);
+border: 2px solid black;
+border-radius: 20px;
+padding: 15px;
+color: var(--color-white);
+margin-left: 5px;
+}
+.cont-info:hover{
+background: brown;
+transition: var(--transition);
+}
+.cv{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    color: var(--color-white);
+    background: pink;
+}
+.cv:hover{
+    background-color: brown;
+    transition: var(--transition);
+}
+/*------------About section ------------------------------------------------- */
+#About{
+margin: 100px auto;
+height: auto;
+}
+.about-intro{
+text-align: center;
+}
+.about-container{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-image{
+    margin-right: 50px;
+    max-width: 600px;
+    height: 300px;
+    border: 1px solid none;
+    border-radius: 20%;
+}
+.about-right{
+    height: auto;
+    max-width: 600px;
+}
+.about-right-flex{
+display: flex;
+justify-content: space-between;
+margin-top: -50px;
+}
+.about-right-left{
+border: 2px solid var(--color-black);
+padding: 30px;
+margin-right: 20px;
+border-radius: 30px;
+text-align: center;
+}
+.about-right-right{
+    border: 2px solid var(--color-black);
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+.exp-pic i{
+margin-bottom: 10px;
+font-size: 25px;
+color: palevioletred;
+}
+.about-right p{
+    line-height: 25px;
+margin-top: 15px;
+font-weight: bold;
+margin-left: 20px;
+}
+/* Experience section ------------------------------------------------------- */
+#Experience{
+    margin: 150px auto;
+    height: auto;
+}
+.exper-intro{
+    text-align: center;
+}
+.experience-container{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+}
+.experience-left{
+max-width: 600px;
+margin-right: 50px;
+border: 2px solid black;
+border-radius: 10%;
+padding: 30px;
+}
+.experience-right{
+    max-width: 600px;
+    margin-left: 50px;
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 10%;
+}
+.uls{
+display: flex;
+list-style: lower-alpha;
+justify-content: space-between;
+margin-top: 20px;
+}
+.small-text{
+font-size: 14px;
+}
+.ul-right{
+margin-left: 30px;
+}
+.ul-left{
+margin-left: 30px;
+}
+/* Projects section-------------------------------------------------------- */
+#Projects{
+    margin: 150px auto;
+    height: auto;
+}
+.intro-pro{
+text-align: center;
+}
+.project-container{
+display: flex;
+align-items: center;
+justify-items: center;
+justify-content: space-between;
+margin: 30px 40px;
+height: inherit;
+}
+.project-container img{
+    max-width: 300px;
+    border-radius: 20px;
+}
+.pro-left{
+border: 2px solid var(--color-black);
+height: auto;
+padding: 30px;
+border-radius: 10%;
+height: inherit;
+}
+.pro-middle{
+    border: 2px solid var(--color-black);
+    height: auto;
+    padding: 30px;
+    border-radius: 10%;
+    height: inherit;
+}
+.pro-right{
+    border: 2px solid var(--color-black);
+    height: auto;
+    padding: 30px;
+    border-radius: 10%;
+    height: inherit;
+}
+.project-container h2{
+  text-align: center;
+}
+.pro-fl{
+display: flex;
+justify-content: space-between;
+margin: 10px 40px;
+}
+.pro-fl a{
+width: 100px;
+height: 40px;
+border: 2px solid var(--color-black);
+box-sizing: border-box;
+padding: 10px;
+border-radius: 40%;
+transition: background .5s ease-in-out;
+}
+.pro-fl a span{
+margin-left: 12px;
+}
+.pro-fl a:hover{
+background: black;
+color: white;
+}
+/* Contact Section ---------------------------------------------------- */
+.intro-contact{
+text-align: center;
+}
+#Contact{
+margin: 150px auto;
+}
+.contact-by{
+text-align: center;
+margin-top: 30px;
+}
+.contact-by-1{
+display: flex;
+align-items: center;
+justify-items: center;
+justify-content: space-between;
+margin: 10px 450px;
+}
+.social{
+display: flex;
+align-items: center;
+justify-items: center;
+justify-content: space-between;
+max-width: 400px;
+border: 2px solid black;
+border-radius: 10px;
+padding: 20px ;
+width: 100%;
+margin-left: 400px;
+margin-top: 50px;
+}
+.social a i{
+transition: color .5s ease-in-out, text-decoration .5s ease-in-out;
+width: 50px;
+height: 30px;
+font-size: 30px;
+}
+.social a i:hover{
+color: red;
+}
+/* Below nav ------------------------------------------------------------------ */
+.below-nav{
+max-width: 350px;
+display: grid;
+margin: 150px auto;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 10px;
+}
+.below-nav a{ 
+font-style: bold;
+font-size: 20px;
+transition: color .5s ease-in-out, text-decoration .5s ease-in-out;
+}
+.below-nav a:hover{
+color: blue;
+text-decoration: underline;
+}
+.copyright{
+text-align: center;
+margin-bottom: 20px;
+}
+@media (max-width: 1024px){
+    #About{
+        margin: 100px auto;
+        height: auto;
+        max-width: 960px;
+        margin-right: 20px;
+    }
+    .project-container{
+    flex-wrap: wrap;
+    row-gap: 20px;
+    }
+    .pro-left{
+    margin-left: 50px;
+    }
+    .pro-middle{
+    margin-right: 40px;
+    }
+    .pro-right{
+   margin-left: 270px;
+   margin-top: 50px;
+    }
+    .contact-by-1{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .contact-by-1 p{
+    margin-top: 20px;
+    }
+    .social{
+    justify-content: center;
+    align-items: center;
+    margin-left: 320px;
+    }
+}
+  @media (max-width: 960px){
+    #About{
+        margin: 100px 40px;
+        height: auto;
+        max-width: 800px;
+
+    }
+    .about-left{
+    margin-left: 20px;
+    }
+    .experience-container{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 100px;
+    }
+    .experience-right{
+    margin-top: 50px;
+    }
+    .experience-left{
+    margin-left: 115px;
+    padding: 40px;
+    }
+    .project-container{
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .pro-left, .pro-middle, .pro-right{
+   margin: auto 100px;
+    }
+    .contact-by-1{
+    flex-wrap: wrap;
+    margin: auto 300px;
+    }
+    .contact-by-1 p{
+    margin-top: 20px;
+    }
+    .social{
+    justify-content: center;
+    align-items: center;
+   margin: 100px auto;
+    }
+}
+@media (max-width: 700px){
+.about-container{
+flex-wrap: wrap;
+margin: 100px auto;
+}
+.about-left{
+margin-bottom: 100px;
+}
+.contact-by-1{
+margin: auto 200px;
+}
+
+}
+
+
+           
