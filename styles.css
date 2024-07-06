@@ -334,6 +334,14 @@ font-size: 30px;
 .social a i:hover{
 color: red;
 }
+.social-text{
+    margin-bottom: -20px;
+    margin-top: 50px;
+    font-family: sans-serif;
+    font-style: italic;
+    color: blue;
+}
+
 /* Below nav ------------------------------------------------------------------ */
 .below-nav{
 max-width: 350px;
@@ -435,6 +443,7 @@ margin-bottom: 20px;
 .about-container{
 flex-wrap: wrap;
 margin: 100px auto;
+
 }
 .about-left{
 margin-bottom: 100px;
@@ -442,8 +451,101 @@ margin-bottom: 100px;
 .contact-by-1{
 margin: auto 200px;
 }
+.nav-container .mylogo{
+  font-size: 20px;
+  margin-right: 20px;
+}
 
 }
+@media (max-width: 500px){
+.Intro-section{
+    max-width: 480px;
+    justify-content: unset;
+}
+.Intro-section img{
+    max-width: 150px;
+    max-height: 150px;
+    margin-left: 20px;
+}
+.intro-text h2{
+   font-size: 18px;
+   font-weight: bold;
+   font-style: oblique;
+}
+.intro-text h1{
+    font-style: italic;
+    font-weight: bold;
+    color: yellowgreen;
+    font-size: 30px;
+}
+.sub-intro-text{
+    text-align: center;
+}
+.intro-text .sub-intro-text a{ 
+    display: none;
+}
+
+.nav-container .mylogo{
+    display: none;
+}
+.nav-container ul{
+    margin-left: 10px;
+}
+.about-right{
+    max-width: 280px;
+}
+.about-right .about-right-flex{
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.about-right-left{
+    margin-bottom: 10px;
+}
+.experience-container{
+    align-items: center;
+}
+.experience-left{
+    max-width: 360px;
+    margin-left: 50px;
+}
+.experience-right{
+    max-width: 360px;
+    margin-right: 50px;
+}
+.experience-left h3{
+    font-size: 15px;
+    margin-right: 10px;
+}
+.experience-right h3{
+    font-size: 15px;
+    margin-right: 10px;
+}
+.contact-by{
+    align-items: center;
+    justify-content: center;
+}
+.contact-by-1{
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+
+}
+.social a{
+    width: 30px;
+}
+.social-text{
+    margin-bottom: -70px;
+    margin-top: 50px;  
+}
+.social-text h3{
+    color: rgb(82, 82, 196);
+}
+
+
+
+}
+    
 
 
            
